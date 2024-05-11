@@ -17,3 +17,5 @@ ENV PATH=$PATH:$GRADLE_HOME/bin
 WORKDIR /app
 
 COPY / .
+
+CMD ./gradlew run
