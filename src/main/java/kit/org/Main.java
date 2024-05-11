@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.HashSet;
 
 public class Main {
+    public static void main(String[] args) {
+        System.out.println(countUnique("test.txt"));
+    }
     public static long countUnique(String fileName) {
         HashSet<String> addresses = new HashSet<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
